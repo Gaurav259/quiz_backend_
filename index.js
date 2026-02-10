@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const quizRouter = require('./router/quiz.router');
+const quizRouter = require('./db/quizzes');
 
 const {loginRouter,signupRouter} = require('./router/auth.router');
 const routeNotFound = require("./middleware/routerNotFound");
